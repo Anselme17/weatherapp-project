@@ -1,0 +1,59 @@
+body {
+    display: grid;
+    grid-template: 150px auto 100px / 550px auto;
+}
+
+header {
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 36px;
+    background-image: url("./src/pexels-exeroniq-31575663.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#gifcontainer {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%
+}
+
+
+#datacontainer {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+footer {
+    grid-area: 3 / 1 / 4 / 3;
+    background-color: bisque;
+    justify-items: center;
+    align-content: center;
+    font-size: 24px;
+    font-style: italic;
+}
+
+input {
+    border-radius: 8px;
+    font-size: 24px;
+    width: 500px;
+}
+
+button {
+    border-radius: 8px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(35, 120, 231);
+}
+
+.gifcontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 👈 clé magique */
+}
